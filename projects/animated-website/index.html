@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimateVision | Modern CSS & JS Animations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <nav>
+        <div class="logo">HUSSAIN Coding</div>
+        
+        <!-- Mobile Toggle Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <ul class="icons" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="ball1"></div>
+      <div class="ball2"></div>
+      <div class="ball3"></div>
+
+      <div class="content">
+        <h1>Bring Your Designs to Life with Smooth Animations</h1>
+        <p>
+          Create engaging user experiences with our collection of carefully
+          crafted animations that will make your website stand out from the
+          crowd.
+        </p>
+
+        <div class="btn">
+          <button class="frist-button">Get Started</button>
+          <button class="second-button">Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2>Powerful Animation Features</h2>
+      <p class="features-sub">
+        Our platform offers everything you need to create stunning animations
+        for your website or application.
+      </p>
+      <div class="section2-main">
+        <div class="content-sec2">
+          <div class="ball feature-ball1"></div>
+          <h2>Lightning Fast</h2>
+          <p>
+            Optimized animations that run smoothly even on lower-end devices
+            without compromising quality.
+          </p>
+        </div>
+
+        <div class="content-sec2">
+          <div class="ball feature-ball2"></div>
+          <h2>Fully Customizable</h2>
+          <p>
+            Easily adjust timing, easing, and properties to create the perfect
+            animation for your needs.
+          </p>
+        </div>
+
+        <div class="content-sec2">
+          <div class="ball feature-ball3"></div>
+          <h2>Easy to Implement</h2>
+          <p>
+            Simple integration with clean code that works with any framework or
+            vanilla JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Animation Showcase Section -->
+    <section class="animation-section" id="showcase">
+      <div class="showcase-header">
+        <h1>Animation Showcase</h1>
+        <p>
+          Explore our collection of smooth, eye-catching animations designed to elevate your user experience.
+        </p>
+      </div>
+
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="demo-box pulse-demo"></div>
+          <h3>Pulse Effect</h3>
+          <p>Smooth expanding glow ideal for primary call-to-action elements.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="demo-box spin-demo"></div>
+          <h3>Infinite Rotate</h3>
+          <p>Seamless $360^\circ$ rotation designed for loaders and badges.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="demo-box float-demo"></div>
+          <h3>Floating Card</h3>
+          <p>Gentle vertical levitation for engaging hero visual assets.</p>
+        </div>
+
+        <div class="showcase-card">
+          <div class="demo-box bounce-demo"></div>
+          <h3>Elastic Bounce</h3>
+          <p>Dynamic keyframe motion that commands immediate user attention.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="last-section">
+      <h1>Ready to Animate Your Website?</h1>
+      <p>
+        Join thousands of developers and designers who are already using our
+        animations to create more engaging experiences.
+      </p>
+
+      <button>Start Free Trial</button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="animate">
+          <h2>AnimateVision</h2>
+          <p class="animate-para">
+            Creating beautiful animations to enhance user experiences and bring
+            websites to life.
+          </p>
+          <ul class="circles">
+            <li class="animat-balls" title="Social Link 1"></li>
+            <li class="animat-balls" title="Social Link 2"></li>
+            <li class="animat-balls" title="Social Link 3"></li>
+            <li class="animat-balls" title="Social Link 4"></li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#showcase">Showcase</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="Resources">
+          <h2>Resources</h2>
+          <ul>
+            <li><a href="#features">Documentation</a></li>
+            <li><a href="#showcase">Tutorials</a></li>
+            <li><a href="#showcase">Blog</a></li>
+            <li><a href="#contact">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <h2>Contact</h2>
+          <ul class="contact-info">
+            <li>hksinergy@gmail.com</li>
+            <li>+1 (555) 123-4567</li>
+            <li>123 Animation Street, Creative City</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-line"></div>
+
+      <div class="last-line">&copy; 2026 AnimateVision. All rights reserved.</div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Navigation -->
+    <script>
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('open');
+      });
+
+      // Close mobile menu when a link is clicked
+      document.querySelectorAll('.icons a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          menuToggle.classList.remove('open');
+        });
+      });
+    </script>
+  </body>
+</html>
